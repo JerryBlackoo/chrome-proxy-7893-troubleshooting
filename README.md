@@ -143,3 +143,9 @@ sudo mv /etc/opt/chrome/policies/managed/local-proxy-7893.json \
 3. `ERR_PROXY_CONNECTION_FAILED` 出现时，先确认“当前到底有没有代理在生效”，而不是反复重启浏览器。
 4. 最有效的定位方式：在目标端口起监听 + `sudo ss -tnp` 抓客户端 PID，直接锁定进程。
 5. Chrome 会话恢复的报错标签页不会自动重试，修好配置后仍需手动刷新，容易造成“改了也没用”的错觉。
+
+---
+
+## 相关文档
+
+- [Chromium / Chrome 架构与关键机制](ARCHITECTURE.md)：进程模型、源码结构、IPC、策略与代理配置合成
